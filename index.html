@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+        Sound Recognition App
+        </title>
+
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript" ></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <center>
+            <div id="sounds_made"> 
+                
+                <h2 id="title">Animal Sound Recognition App</h2>
+                <p> Note: The sounds that will be reacted to are, Background noise, Barking, Meowing, Mooing, Bear Roaring </p> 
+            </div>
+            <br><br>
+            <div id="button_style">
+                <button  id="audio_button" class="btn btn-warning" onclick="audio_detect()"> Start </button>
+            </div>
+            <br><br>
+            <div>
+                <h4 id="dog"> Dogs detected-<p id="number_of_dogs"></p></h4>
+                <h4 id="cat"> Cats detected-<p id="number_of_cats"></p></h4>
+                <br>
+                <h3>Sound detected-<h3 id="sound_detected"></h3></h3>
+                <br><br>
+                <img>
+            </div>
+            <div id="footer">
+                Developed by-Vihaan Bhalerao
+            </div>
+        </center>
+        
+    </body>
+    <script src="main.js"></script>
+</html>
